@@ -1,4 +1,4 @@
-# Weekend 1: Python Fundamentals
+ # Weekend 1: Python Fundamentals
 
 - Variables
 - Arithmetic
@@ -15,27 +15,35 @@ Simple Arithmetic
         - Create a savings pot and implement a round-up savings function
         - Predict returns over time based on interest.
 
-Control Flow:
-    - Blood Pressure Categorisation
-    - Heart Rate
-    https://www.kaggle.com/datasets/shayanfazeli/heartbeat/data
 
-    - During this, we will also look at plotting data with matplotlib. (e.g. look at moving averages of data)
-    - Take a list of 1000 voltage readings & plot them
-    - find the maximum value
-    - remove the drift caused by breathing (moving average)
-    - find the slope of the signal
-        - use it to detect the qrs
-        - use that to get the heart rate
+Data Analysis
+    - https://www.kaggle.com/datasets/fungainicolechirombe/nhs-free-dataset-for-analysis
+    
+    - EDA
+        - Plot AE Activity over time
+        - Plot activity over time period
+        - Time Average activity
+        - Compute pct of patients who were seen within the NHS 4-hour target. Q: Are there any trends? Group by month and year.
+        - Compute Did not attend rate
+        
+        - Plot volume of outpatient follow ups vs first appointments across specialties. Which one has the highest
+        
+        - Is there a correlation between higher DNA rates in outpatients and A&E attendances?
 
-    - Image Segmentation (CXR)
-        - Detect lung boundaries
-        - Do some smoothing to get a better estimate of the edges
-        - obtain Heart width and Thoracic Width
+        - Determine the patient volume vs cost across specialties
+        - Identify the 10% of trusts that have the lowest A&E wait times whilst also having a below average cost-per-patient
+            - Can we identify what these trusts have in common? Size, Location, Specialty mix?
 
 
-Mini-Project:
-    Save the Patient ID, HR, CTR, and Priority Status to file
+- Image Segmentation (CXR) https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+    
+    - Cropping to a region of interest
+    - Enhance detail by applying a log transform to the image
+    - Gaussian blurring to reduce noise
+    - Edge detection (e.g. Sobel)
+    - use a threshold to identify lungs / heart
+      - Possibly use this to obtain CTR
+
 
 
 
